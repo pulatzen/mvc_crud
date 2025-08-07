@@ -1,0 +1,18 @@
+{
+    "name": "pulat/mvc1t",
+    "description": "My custom PHP MVC",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "pulat"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/",
+            "core\\": "core/"
+        }
+    },
+    "require": {}
+}

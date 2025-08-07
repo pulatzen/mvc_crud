@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.login-container {
+    width: 800px;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    display: flex;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.login-left,
+.login-right {
+    flex: 1;
+    padding: 40px;
+    background: #fff;
+}
+
+.login-right {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-left h2,
+.login-right h2 {
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 25px;
+    background: #ff4b2b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #e03e22;
+}
+
+.login-right a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.login-right a:hover {
+    background: white;
+    color: #ff4b2b;
+}
+
+.extras {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.user-table thead {
+    background-color: #f4f4f4;
+}
+
+.user-table th,
+.user-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn {
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 5px;
+    color: white;
+}
+
+.btn.edit {
+    background-color: #4CAF50;
+}
+
+.btn.delete {
+    background-color: #e53935;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.styled-table thead tr {
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.btn {
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 5px;
+    color: white;
+    transition: background 0.2s ease;
+}
+
+.btn.edit {
+    background-color: #4CAF50;
+}
+
+.btn.edit:hover {
+    background-color: #449d48;
+}
+
+.btn.delete {
+    background-color: #e53935;
+}
+
+.btn.delete:hover {
+    background-color: #c62828;
+}
+
+/* Keep same layout but fix sizing and style */
+.user-box {
+    height: auto;
+}
+
+.user-left {
+    flex: 2;
+    padding: 30px;
+    overflow-x: auto;
+}
+
+.user-right {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Smooth scrolling if table is wide */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+/* Make Add button like other buttons */
+.btn.add {
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn.add:hover {
+    background-color: white;
+    color: #ff4b2b;
+}
+
+.manage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    padding: 20px 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.manage-header h2 {
+    margin-bottom: 5px;
+}
+
+.manage-title p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.manage-header .btn.add {
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.manage-header .btn.add:hover {
+    background: white;
+    color: #ff4b2b;
+}
+
+.table-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-input,
+.sort-select {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    /* space between inputs */
+}
+
+.search-input {
+    width: 120px;
+    height: 28px;
+    padding: 3px 6px;
+    font-size: 14px;
+}
+
+.sort-select {
+    height: 30px;
+    font-size: 14px;
+    padding: 2px 5px;
+}
+
+.submit-btn {
+    height: 30px;
+    padding: 4px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
